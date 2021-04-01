@@ -1,9 +1,9 @@
-
+var correct_btn = Math.round(Math.random() * 2) + 1 ;
 function check_btn(id) {
-  var correct_btn = Math.round(Math.random() * 2) + 1 ;
   if (id == correct_btn) {
-    alert("You won!");
+    alert("You're guess it's right. Try again!");
   } else {
-    alert("You lose!")
+    alert("You're wrong!")
+    return false;
   }
 }
